@@ -50,16 +50,49 @@
 
 	function enviarForm(form) {
 		var dados = $(form).serialize();
-
+		console.log(dados);
 		jQuery.ajax({
 			type: "POST",
 			url: "index.php",
 			data: dados,
 			success: function( data )
 			{
-				console.log( data );
+				console.log(data);
+			},
+			complete: function( data )
+			{
+				console.log('Muda de Pagina');
+				if(data){
+					var local = window.location.href.split('/');
+				}
+				if(local[local.length-1] == "insert"){
+					$(location).attr('href', './select');
+				}else{
+					$(location).attr('href', '../select');
+				}
 			}
 		});
 	}
+
+	$(".acao.deletar").click( function(){ 
+		$confirme = confirm("Tem certeza que deseja deletar?");
+		
+		if($confirme){
+			jQuery.ajax({
+				type: "POST",
+				url: "index.php",
+				data: "tipo=delete&id="+$(this).attr('id'),
+				success: function( data )
+				{
+					console.log( data );
+				},
+				complete: function( data )
+				{
+					location.reload();
+				}
+			});
+		}
+		
+	});
 		
 });

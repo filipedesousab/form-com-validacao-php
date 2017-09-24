@@ -38,6 +38,27 @@ class DAO{
 		}
 		return true;
 	}
+	public function delete($id, $tabela='user')
+	{
+		$sql = "DELETE FROM ".$tabela." WHERE user.id = ".$id;
+		$data = $this->db->query($sql);
+		mysqli_close($this->db);
+	}
+	public function update($values, $tabela = "user")
+	{
+		$nome = $values["nome"];
+		$email = $values["email"];
+		$senha = md5($values["senha"]);
+		$id = $values["id"];
+
+		$stmt = $this->db->prepare("UPDATE user SET nome = ?, email = ?, senha = ? WHERE id = ?");
+		//$stmt = $db->query("INSERT INTO 'user' ('id', 'nome', 'email', 'senha') VALUES (null,'fulsss', 'dfdf@ddd','senha')");
+		$stmt->bind_param('sssi', $nome , $email, $senha, $id);
+		if(!$stmt->execute()){
+			return false;
+		}
+		return true;
+	}
 
 }
 

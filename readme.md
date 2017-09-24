@@ -28,7 +28,6 @@ Arquivos de teste
 ##### _CSS_
 ```html
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
 ```
 ##### _JS_
 ```html
@@ -40,4 +39,6 @@ Arquivos de teste
 [Criptografias](http://blog.thiagobelem.net/criptografia-no-php-usando-md5-sha1-e-base64)
 <http://blog.thiagobelem.net/criptografia-no-php-usando-md5-sha1-e-base64> ··
 [Trabalhando com PDO](http://www.diogomatheus.com.br/blog/php/trabalhando-com-pdo-no-php/)
-<http://www.diogomatheus.com.br/blog/php/trabalhando-com-pdo-no-php/>
+<http://www.diogomatheus.com.br/blog/php/trabalhando-com-pdo-no-php/> ··
+[Trabalhando com mysqli](http://www.codigomaster.com.br/desenvolvimento/crud-com-php-de-forma-simples-e-facil)
+<http://www.codigomaster.com.br/desenvolvimento/crud-com-php-de-forma-simples-e-facil>
