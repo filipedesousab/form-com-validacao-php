@@ -12,12 +12,15 @@ jQuery.ajax(): <http://api.jquery.com/jquery.ajax/>
 
 ### jQuery validate
 Exemplo de validação: <http://www.devmedia.com.br/jquery-validate-validando-formularios/26490>
+
 Método .vaidate(): <https://jqueryvalidation.org/validate/>
 
 >_Não é interessante utilizar o CDN pois o site é lento_
 
+
 ### Bootstrap
 Forms Bootstrap: <https://getbootstrap.com/docs/4.0/components/forms/>
+
 Buttons Bootstrap: <https://getbootstrap.com/docs/4.0/components/buttons/>
 
 ##### _CSS_
@@ -32,5 +35,7 @@ Buttons Bootstrap: <https://getbootstrap.com/docs/4.0/components/buttons/>
 ### PHP
 
 Criptografias: <http://blog.thiagobelem.net/criptografia-no-php-usando-md5-sha1-e-base64>
+
 Trabalhando com PDO: <http://www.diogomatheus.com.br/blog/php/trabalhando-com-pdo-no-php/>
+
 Trabalhando com mysqli: <http://www.codigomaster.com.br/desenvolvimento/crud-com-php-de-forma-simples-e-facil>
